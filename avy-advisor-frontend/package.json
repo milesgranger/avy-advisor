@@ -1,0 +1,25 @@
+{
+  "name": "avy-advisor",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html --no-cache",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-cache"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "start": "^5.1.0",
+    "pandas-js": "^0.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "babel-runtime": "^6.23.0",
+    "cross-env": "^5.1.1",
+    "parcel-bundler": "^1.4.1",
+    "yarn": "^1.3.2"
+  }
+}

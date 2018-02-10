@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  bundler:
+    container_name: 'bundler'
+    image: milesg/avy-advisor-bundler:latest
+    build:
+      context: .
+      dockerfile: ./avy-advisor-frontend/Dockerfile
+    volumes:
+      - ./avy-advisor-frontend:/code
+    network_mode: host
+    command: ["bash", "-c", "yarn install && yarn start"]
